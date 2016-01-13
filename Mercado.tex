@@ -1,4 +1,4 @@
-\documentclass[10pt, spanish, a5paper]{article}
+\documentclass[12pt, spanish, a5paper]{article}
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
@@ -9,21 +9,34 @@
 %\usepackage{ascii}
 \usepackage{cite}
 %\usepackage[bookmarks]{hyperref}
-\usepackage{tikz}
-\usepackage{forest}
+
 \usepackage{microtype}
 \usepackage[margin=15mm]{geometry}
 \usepackage{booktabs}
-\usepackage{enumitem}
+%\usepackage{enumitem}
+\usepackage[inline]{enumitem}
+
+%Cambia los listados de descripciones para que en vez de comenzar en la misma linea agreguen un enter.
 \setlist[description]{style=nextline}
+
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
 
 \begin{document}
 \title{\textbf{Mercadotecnia}}
+\date{}
 
 \maketitle
 
 
+
 \tableofcontents
+
+\bigskip
+\listoffigures
 
 
 
@@ -345,6 +358,8 @@ Es una unidad social que tiene por objetivos \emph{producir bienes y servicios q
 		
 		
 		\bigskip
+				\bigskip
+						\bigskip
 		
 		
 		
@@ -699,26 +714,287 @@ Las <<cuatro P>> son:
 
 
 
+\section{Macro y micro-ambiente}
+
+\subsection{Factores macro}
+\begin{itemize}
+	\item Demografía.
+	\item Factores socio-culturales.
+	\item Ámbito natural (Recursos naturales).
+	\item Tecnología.
+	\item Factores políticos y legales: regulación, lobby, etc.
+	\item Condiciones económicas.
+\end{itemize}
+
+\subsection{Factores micro}
+
+Son los que afectan de manera particular a la organización.
+
+\begin{itemize}
+	\item Proveedores.
+	\item Intermediarios de mercadotecnia.
+	\item Mercado.
+\end{itemize}
+
+
+\part{Mercado}
+
+
+\section{Definición de mercado}
+Son las personas u organizaciones que tienen una \emph{necesidad}, \emph{poseen capacidad de compra} y están \emph{dispuestos a comprar}.
+
+
+\section{Modelo de las fuerzas competitivas}
+
+\begin{itemize}
+	\item Amenazas de nuevos competidores.
+	\item Realidad entre competidores.
+	\item Poder de negociación de los proveedores.
+	\item Poder de negociación de los compradores.
+	\item Amenaza de ingreso de productos sustitutos.
+\end{itemize}
+
+
+
+
+\begin{figure*}[th]
+	\centering
+	{\footnotesize 
+		
+		\begin{tabular*}{\linewidth}{M{.2\linewidth} M{.1\linewidth} M{.2\linewidth} M{.1\linewidth} M{.2\linewidth}}
+                                                              &               & \textbf{Nuevos entrantes} \linebreak Amenaza de los nuevos competidores      &              &  \\
+                                                              &               & \bigskip $\Downarrow$ \bigskip                                               &              &  \\
+\textbf{Proveedores}\linebreak Poder de negociación de los proveedores & $\Rightarrow$ & \textbf{Competidores}\linebreak Rivalidad entre los competidores existentes  & $\Leftarrow$ & \textbf{Clientes} \linebreak Poder de negociación de los clientes \\
+                                                              &               & \bigskip $ \Uparrow$ \bigskip                                                &              &  \\
+                                                              &               & \textbf{Sustitutos} \linebreak Amenaza de productos y servicios sustitutivos &              &
+	\end{tabular*}
+		
+	}
+	
+	
+	
+	\caption[Las cuatro P]{Esquema de las cinco fuerzas competitivas de Michael Porter.}
+	\label{fig:tiposempresa}
+\end{figure*}
+
+
+\section{Segmentación}
+
+Es el proceso de dividir los mercados en grupos claros de compradores, con diferentes características, necesidades y comportamientos.
+
+\subsection{Segmento de mercado}
+Es un grupo relativamente grande y homogéneo de consumidores que se pueden 
+\begin{enumerate*}[label=\itshape\alph*)]
+	\item identificar dentro de un mercado, 
+	\item que tienen deseos, 
+	\item poder de compra, 
+	\item ubicación geográfica,
+	\item actitudes de compra o hábitos de compra similares y que 
+	\item reaccionan de un modo parecido a una mezcla de marketing.
+\end{enumerate*}
+
+\subsubsection{Requisitos de un segmento}
+\begin{itemize}
+	\item Identificable
+	\item Medible
+	\item Accesible
+	\item Sustancial
+	\item Diferente
+	\item Posible
+	\item Defendible
+\end{itemize}
+
+\subsubsection{Tipos de segmentación}
+
+\begin{description}
+	\item[Demográfica.] Sexo, edad, ingresos, educación, etc.
+	\item[Geográfica.] Países, regiones, municipios, etc.
+	\item[Psicográfica.] Clase social, estilo de vida, comportamientos, creencias, etc.
+\end{description}
+
+\section{Posicionamiento}
+
+Es el conjunto de todas las percepciones que existen en la mente de un consumidor respecto a una marca.
+
+Estas percepciones son relacionadas a una serie de atributos importante que marcaron una una diferencia entre esa marca y las demás de la competencia.
+
+La empresa puede decidir qué atributos quiere que sus clientes reconozcan, lo difícil es saber cuáles son los que atraerán más clientes y fidelizará a los actuales.
+
+\section{Segmentación vincular}
+
+Se basa en el vínculo emocional, racional, subjetivo y psicológico entre el sujeto y el producto o servicio.
+
+\section{Nicho de mercado}
+
+Es una porción de un segmento de mercado en la que los individuos poseen características y necesidades homogéneas y estas últimas no están del todo cubiertas por la oferta general del mercado.
+
+\textbf{\textsc{ejemplos.}} Alimentos para celíacos, revistas de fotografía de aves, etc.
+
+\section{Estrategias de segmentación}
+\begin{description}
+	\item[Indiferenciada.] Una sola estrategia para todos los segmentos.
+	\item[Diferenciada.] Una estrategia para cada segmento al que se apunta.
+	\item[Concentrada.] Se apunta a un solo segmento, con una sola estrategia.
+\end{description}
+
+
+\section{Segmentación por atributos}
+
+\section{Dimensiones mercado-producto}
+
+\begin{description}
+	\item[Mercado técnico.] Características funcionales.
+	\item[Mercado de precios.] Relación precio/performance.
+	\item[Mercado de imágenes.] Privilegian la promesa simbólica que cada producto contiene. Por ejemplo, las marcas de cosméticos.	
+\end{description}
+
+
+\part{Producto, precios, colocación del producto, promoción de productos.}
+
+\section{Atributos del producto}
+
+\begin{description}[style=standard]
+	\item[Tangible.] Forma, tamaño.
+	\item[Intangible.] Marca, valores, color.
+	\item[Núcleo.] Las propiedades físicas, químicas y técnicas del producto.
+	\item[Calidad.]
+	\item[Precio.] Valor por el cual el cliente obtiene el producto.
+	\item[Envase.] Protege, diferencia e informa.
+	\item[Diseño.] 
+	\item[Marca.] 
+	\item[Servicio.]
+	\item[Imagen del producto.] Es lo que permanece en la mente del consumidor.
+	\item[Imagen de la empresa.] 
+\end{description}
+
+\section{Niveles del producto}
+
+\begin{enumerate}
+	\item \textbf{Básico.}
+	
+	La necesidad que tiene la gente.
+	
+	\item \textbf{Real. }
+	
+	Características del objeto.
+	 \begin{enumerate*}[label=\itshape\alph*)]
+	 	\item grado de calidad,
+	 	\item características,
+	 	\item diseño,
+	 	\item marca,
+	 	\item paquete.
+	 \end{enumerate*}
+	
+	\item \textbf{Aumentado.}
+	
+	Servicios y beneficios del producto.
+	
+	\textbf{\textsc{ejemplo:}} Apple Care, celulares Samsung.
+	
+\end{enumerate}
+
+
+\section{Clasificación de los productos}
+
+\subsection{Bienes duraderos.}
+
+Son los bienes de consumo que se usan durante bastante tiempo.
+
+\textbf{\textsc{ejemplo:}} Electrodomésticos, máquinas, ropa.
+
+\subsection{Bien no duradero.}
+
+Son bienes de consumo que se consumen en unos cuantos usos.
+
+\textbf{\textsc{ejemplo:}} Alimentos, productos de limpieza.
+
+\subsection{Servicios.}
+
+Son las actividades, los beneficios o los satisfactores que se ponen en venta.
+
+\textbf{\textsc{ejemplo:}} Telefonía, televisión, Internet.
+
+\subsection{Bienes de consumo personal.}
+
+Son los bienes que adquieren los consumidores finales para su consumo personal.
+
+\subsubsection{De uso común.}
+Comprados con frecuencia y con mínimas comparaciones.
+
+\subsubsection{De comparación.}
+Comprados en base al precio, conveniencia, calidad, etc.
+
+\subsubsection{Bienes especializados.}
+Tienen características singulares o una marca que lo identifica.
+
+\subsubsection{Bienes no buscados.}
+No conocidos por el comprador o no piensa comprar.
+
+
+\section{Ciclo de vida del producto}
+Es la evolución de las ventas de un artículo durante el tiempo que permanece en el mercado. \cite{ciclovidaproducto}
+
+Entender el ciclo de vida del producto sirve para tomar las decisiones estratégicas que sean mejores para cada etapa en la que se encuentra el producto.
+
+\begin{enumerate}
+	\item Lanzamiento.
+	\item Crecimiento.
+	\item Madurez.
+	\item Declive.
+\end{enumerate}
 
 
 
 
 
+\begin{figure*}[t]
+	\centering
+	{\footnotesize 
+		
+		
+		\begin{tabular*}{\linewidth}
+			{p{.25\linewidth} p{.66\linewidth}}
+				
+			\toprule[1pt]
+			
+			\textbf{Introducción} & Crear conciencia y probar el producto.                              \\ \midrule
+			\textbf{Crecimiento}                                                                   & Maximizar la participación en el mercado.                           \\ \midrule
+			\textbf{Madurez}                                                                       & Maximizar las utilidades y defender la participación en el mercado. \\ \midrule
+			\textbf{Declive}                                                                       & Reducir gastos y ordeñar la marca.                                  \\ \midrule
+		\end{tabular*}
+		
+	}
+
+	
+	\caption[Objetivos del marketing]{Objetivos del marketing según la etapa en la que se encuentra el producto.}
+	\label{fig:tiposempresa}
+\end{figure*}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+\begin{figure*}[t]
+	\centering
+	{\footnotesize 
+		
+		
+		\begin{tabular*}{\linewidth}
+			{p{.25\linewidth} p{.66\linewidth}}
+			
+			\toprule[1pt]
+			
+			\textbf{Introducción} & Crear conciencia y probar el producto.                              \\ \midrule
+			\textbf{Crecimiento}                                                                   & Maximizar la participación en el mercado.                           \\ \midrule
+			\textbf{Madurez}                                                                       & Maximizar las utilidades y defender la participación en el mercado. \\ \midrule
+			\textbf{Declive}                                                                       & Reducir gastos y ordeñar la marca.                                  \\ \midrule
+		\end{tabular*}
+		
+	}
+	
+	
+	\caption[Objetivos del marketing]{Objetivos del marketing según la etapa en la que se encuentra el producto.}
+	\label{fig:tiposempresa}
+\end{figure*}
 
 
 
