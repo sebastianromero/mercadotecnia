@@ -3,9 +3,9 @@
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
 
-\usepackage{tgschola}
-%\usepackage{tgheros}
-%\renewcommand*\familydefault{\sfdefault}
+%\usepackage{tgschola}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
 %\usepackage{ascii}
 \usepackage{cite}
 %\usepackage[bookmarks]{hyperref}
@@ -13,8 +13,10 @@
 \usepackage{microtype}
 \usepackage[margin=15mm]{geometry}
 \usepackage{booktabs}
+
 %\usepackage{enumitem}
 \usepackage[inline]{enumitem}
+\usepackage{graphicx}
 
 %Cambia los listados de descripciones para que en vez de comenzar en la misma linea agreguen un enter.
 \setlist[description]{style=nextline}
@@ -23,6 +25,10 @@
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\renewcommand\tabcolsep{\fill}
+
+
 
 
 \begin{document}
@@ -101,7 +107,7 @@ Es el que lleva a cabo las tareas y actividades para el cumplimiento de las meta
 
 \begin{figure}[h]
 \centering
-\begin{tabular}{ll}
+\begin{tabular}{@{\extracolsep{12pt}} ll}
 	\midrule \textbf{Estratégico} & Jefe \\ 
 	\midrule \textbf{Coordinador} & Gerentes \\ 
 	\midrule \textbf{Operativo} & Empleados \\ 
@@ -345,7 +351,7 @@ Es una unidad social que tiene por objetivos \emph{producir bienes y servicios q
 	{\footnotesize 
 		
 		
-		\begin{tabular*}{\linewidth}{p{.33\linewidth} p{.33\linewidth} p{.33\linewidth}}
+		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} p{.33\linewidth} p{.33\linewidth} p{.33\linewidth}}
 			\toprule[1pt]
 			\textbf{Dimensional} & \textbf{Jurídicos}                           & \textbf{Actividad}  \\ \midrule
 			Pequeñas             & Unipersonales                                & Industriales        \\ \midrule
@@ -363,7 +369,7 @@ Es una unidad social que tiene por objetivos \emph{producir bienes y servicios q
 		
 		
 		
-		\begin{tabular*}{\linewidth}{p{.33\linewidth} p{.33\linewidth} p{.33\linewidth}}
+		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} p{.33\linewidth} p{.33\linewidth} p{.33\linewidth}}
 			\toprule[1pt]
 			\textbf{Económico} & \textbf{Geográfico} & \textbf{Propiedad} \\ \midrule
 			Sector primario    & Locales             & Privadas           \\ \midrule
@@ -947,7 +953,7 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 
 
 
-\begin{figure*}[t]
+\begin{figure*}[h]
 	\centering
 	{\footnotesize 
 		
@@ -973,7 +979,7 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 
 
 
-\begin{figure*}[t]
+\begin{figure*}[h]
 	\centering
 	{\footnotesize 
 		
@@ -1000,9 +1006,167 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 
 
 
+\begin{figure*}[h]
+	\centering
+	{\footnotesize 
+		
+
+		\begin{tabular*}{1\linewidth}
+			{ @{\extracolsep{6pt}} p{.15\linewidth} p{.20\linewidth} p{.20\linewidth} p{.20\linewidth} p{.20\linewidth} }
+			
+			\toprule[1pt]
+			& \textbf{Intro.} & \textbf{Crecimiento} & \textbf{Madurez} & \textbf{Declive} \\ \midrule
+			\textbf{Ventas} & Crear conciencia y probar el producto. & Rápido. & Pico & Declinantes                             \\ \midrule
+			\textbf{Costos por \linebreak cliente} & Eleveado & Medio & Bajo & Bajo \\ \midrule
+			
+		\textbf{Utilidades} & Negativas & En ascenso & Elevadas & Declinantes \\ \midrule
+		\textbf{Clientes} & Innovadores & Early adopters & Mayoría media & Rezagados \\ \midrule
+		\textbf{Compet.} & Pocos & En aumento & Número en declinación & Pocos \\ \midrule
+
+		\end{tabular*}
+		
+	}
+	
+	
+	\caption[Objetivos del marketing]{Objetivos del marketing según la etapa en la que se encuentra el producto.}
+	\label{fig:tiposempresa}
+\end{figure*}
 
 
-\newpage
+
+\begin{figure*}[h]
+	
+
+	\centering
+	{\footnotesize 
+		
+
+		\begin{tabular*}{1\linewidth}
+			{p{.5\linewidth} p{.5\linewidth}}
+			
+			\toprule[1.5pt]
+			\multicolumn{2}{ l }{ \textbf{{{\normalsize  Introducción}}}}  \\ \midrule
+			
+			\textbf{Producto} &  Producto básico    \\ \midrule
+			\textbf{Precio} & Usar costo plus \\ \midrule
+			\textbf{Distribución} & Selectivas \\ \midrule
+			\textbf{Publicidad} & Crear conciencia del producto \\ \midrule
+			\textbf{Promoción \linebreak de ventas} & Intensa para que lo aprueban \\ \midrule
+
+		\end{tabular*}
+
+	}
+	
+	
+	\caption[Estrategias]{Estrategias para la etapa de Introducción.}
+	\label{fig:tiposempresa}
+\end{figure*}
+
+
+
+
+
+\begin{figure*}[h]
+	
+	
+	\centering
+	{\footnotesize 
+		
+		
+	\begin{tabular*}{1\linewidth}
+		{p{.25\linewidth} p{.25\linewidth}}
+		
+		\toprule[1.5pt]
+		\multicolumn{2}{ l }{ \textbf{{{\normalsize  Crecimiento}}}}  \\ \midrule
+		\textbf{Producto} &  Extensiones del producto  \\ \midrule
+		\textbf{Precio} &  Precio para penetrar el mercado   \\ \midrule
+		\textbf{Distribución} & Intensiva\\ \midrule
+		\textbf{Publicidad} & Despertar interés \\ \midrule
+		\textbf{Promoción \linebreak de ventas} & Reducción\\ \midrule
+		
+	\end{tabular*}
+	
+
+		
+	}
+	
+	
+	\caption[Estrategias]{Estrategias para la etapa de Crecimiento.}
+	\label{fig:tiposempresa}
+\end{figure*}
+
+
+
+\begin{figure*}[h]
+	
+	
+	\centering
+	{\footnotesize 
+		
+		
+	
+	\begin{tabular*}{\linewidth}
+		{p{.25\linewidth} p{.66\linewidth}}
+		
+		\toprule[1.5pt]
+		\multicolumn{2}{ l }{ \textbf{{{\normalsize  Madurez}}}}  \\ \midrule
+		\textbf{Producto} & Diversidad de marcas y modelos  \\ \midrule
+		\textbf{Precio} &  Precio para derrotar la competencia  \\ \midrule
+		\textbf{Distribución} & Intensiva\\ \midrule
+		\textbf{Publicidad} & Enfatizar las diferencias de la marca\\ \midrule
+		\textbf{Promoción \linebreak de ventas} & Incremento\\ \midrule
+		
+	\end{tabular*}
+
+
+		
+		
+	}
+	
+	
+	\caption[Estrategias]{Estrategias para la etapa de Madurez.}
+	\label{fig:tiposempresa}
+\end{figure*}
+
+
+\begin{figure*}[h]
+	
+	
+	\centering
+	{\footnotesize 
+		
+
+		
+	\begin{tabular*}{\linewidth}
+		{p{.25\linewidth} p{.66\linewidth}}
+		
+		\toprule[1.5pt]
+		\multicolumn{2}{ l }{ \textbf{{{\normalsize  \textsf{Declive}}}}}  \\ \midrule
+		\textbf{Producto} & Discontinuar artículos débiles  \\ \midrule
+		\textbf{Precio} &  Reducción de precio \\ \midrule
+		\textbf{Distribución} & Selectiva\\ \midrule
+		\textbf{Publicidad} & Reducir \\ \midrule
+		\textbf{Promoción \linebreak de ventas} & Reducción al mínimo \\ \midrule
+		
+	\end{tabular*}
+		
+		
+		
+		
+	}
+	
+	
+	\caption[Estrategias]{Estrategias para la etapa de Declive.}
+	\label{fig:tiposempresa}
+\end{figure*}
+
+
+
+
+
+
+
+
 
 \bibliography{Mercado}
 \bibliographystyle{acm}
