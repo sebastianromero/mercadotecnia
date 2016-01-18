@@ -14,6 +14,9 @@
 \usepackage[margin=15mm]{geometry}
 \usepackage{booktabs}
 
+\usepackage{subcaption}
+\usepackage{float}
+
 %\usepackage{enumitem}
 \usepackage[inline]{enumitem}
 \usepackage{graphicx}
@@ -953,60 +956,8 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 
 
 
-\begin{figure*}[h]
-	\centering
-	{\footnotesize 
-		
-		
-		\begin{tabular*}{\linewidth}
-			{p{.25\linewidth} p{.66\linewidth}}
-				
-			\toprule[1pt]
-			
-			\textbf{Introducción} & Crear conciencia y probar el producto.                              \\ \midrule
-			\textbf{Crecimiento}                                                                   & Maximizar la participación en el mercado.                           \\ \midrule
-			\textbf{Madurez}                                                                       & Maximizar las utilidades y defender la participación en el mercado. \\ \midrule
-			\textbf{Declive}                                                                       & Reducir gastos y ordeñar la marca.                                  \\ \midrule
-		\end{tabular*}
-		
-	}
 
-	
-	\caption[Objetivos del marketing]{Objetivos del marketing según la etapa en la que se encuentra el producto.}
-	\label{fig:tiposempresa}
-\end{figure*}
-
-
-
-
-\begin{figure*}[h]
-	\centering
-	{\footnotesize 
-		
-		
-		\begin{tabular*}{\linewidth}
-			{p{.25\linewidth} p{.66\linewidth}}
-			
-			\toprule[1pt]
-			
-			\textbf{Introducción} & Crear conciencia y probar el producto.                              \\ \midrule
-			\textbf{Crecimiento}                                                                   & Maximizar la participación en el mercado.                           \\ \midrule
-			\textbf{Madurez}                                                                       & Maximizar las utilidades y defender la participación en el mercado. \\ \midrule
-			\textbf{Declive}                                                                       & Reducir gastos y ordeñar la marca.                                  \\ \midrule
-		\end{tabular*}
-		
-	}
-	
-	
-	\caption[Objetivos del marketing]{Objetivos del marketing según la etapa en la que se encuentra el producto.}
-	\label{fig:tiposempresa}
-\end{figure*}
-
-
-
-
-
-\begin{figure*}[h]
+\begin{figure*}[H]
 	\centering
 	{\footnotesize 
 		
@@ -1034,15 +985,18 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 
 
 
-\begin{figure*}[h]
-	
 
+
+
+\begin{figure}[H]
+	
+	
 	\centering
 	{\footnotesize 
 		
-
+		
 		\begin{tabular*}{1\linewidth}
-			{p{.5\linewidth} p{.5\linewidth}}
+			{p{.25\linewidth} p{.75\linewidth}}
 			
 			\toprule[1.5pt]
 			\multicolumn{2}{ l }{ \textbf{{{\normalsize  Introducción}}}}  \\ \midrule
@@ -1052,73 +1006,72 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 			\textbf{Distribución} & Selectivas \\ \midrule
 			\textbf{Publicidad} & Crear conciencia del producto \\ \midrule
 			\textbf{Promoción \linebreak de ventas} & Intensa para que lo aprueban \\ \midrule
-
+			
 		\end{tabular*}
-
+		
 	}
 	
 	
 	\caption[Estrategias]{Estrategias para la etapa de Introducción.}
 	\label{fig:tiposempresa}
-\end{figure*}
+\end{figure}
 
 
 
 
 
-\begin{figure*}[h]
-	
-	
+\begin{figure}[H]
+
 	\centering
 	{\footnotesize 
 		
 		
-	\begin{tabular*}{1\linewidth}
-		{p{.25\linewidth} p{.25\linewidth}}
+		\begin{tabular*}{1\linewidth}
+			{p{.25\linewidth} p{.75\linewidth}}
+			
+			\toprule[1.5pt]
+			\multicolumn{2}{ l }{ \textbf{{{\normalsize  Crecimiento}}}}  \\ \midrule
+			\textbf{Producto} &  Extensiones del producto  \\ \midrule
+			\textbf{Precio} &  Precio para penetrar el mercado   \\ \midrule
+			\textbf{Distribución} & Intensiva\\ \midrule
+			\textbf{Publicidad} & Despertar interés \\ \midrule
+			\textbf{Promoción \linebreak de ventas} & Reducción\\ \midrule
+			
+		\end{tabular*}
 		
-		\toprule[1.5pt]
-		\multicolumn{2}{ l }{ \textbf{{{\normalsize  Crecimiento}}}}  \\ \midrule
-		\textbf{Producto} &  Extensiones del producto  \\ \midrule
-		\textbf{Precio} &  Precio para penetrar el mercado   \\ \midrule
-		\textbf{Distribución} & Intensiva\\ \midrule
-		\textbf{Publicidad} & Despertar interés \\ \midrule
-		\textbf{Promoción \linebreak de ventas} & Reducción\\ \midrule
 		
-	\end{tabular*}
-	
-
 		
 	}
 	
 	
 	\caption[Estrategias]{Estrategias para la etapa de Crecimiento.}
 	\label{fig:tiposempresa}
-\end{figure*}
+\end{figure}
 
 
 
-\begin{figure*}[h]
+\begin{figure}[H]
 	
 	
 	\centering
 	{\footnotesize 
 		
 		
-	
-	\begin{tabular*}{\linewidth}
-		{p{.25\linewidth} p{.66\linewidth}}
 		
-		\toprule[1.5pt]
-		\multicolumn{2}{ l }{ \textbf{{{\normalsize  Madurez}}}}  \\ \midrule
-		\textbf{Producto} & Diversidad de marcas y modelos  \\ \midrule
-		\textbf{Precio} &  Precio para derrotar la competencia  \\ \midrule
-		\textbf{Distribución} & Intensiva\\ \midrule
-		\textbf{Publicidad} & Enfatizar las diferencias de la marca\\ \midrule
-		\textbf{Promoción \linebreak de ventas} & Incremento\\ \midrule
+		\begin{tabular*}{\linewidth}
+			{p{.25\linewidth} p{.75\linewidth}}
+			
+			\toprule[1.5pt]
+			\multicolumn{2}{ l }{ \textbf{{{\normalsize  Madurez}}}}  \\ \midrule
+			\textbf{Producto} & Diversidad de marcas y modelos  \\ \midrule
+			\textbf{Precio} &  Precio para derrotar la competencia  \\ \midrule
+			\textbf{Distribución} & Intensiva\\ \midrule
+			\textbf{Publicidad} & Enfatizar las diferencias de la marca\\ \midrule
+			\textbf{Promoción \linebreak de ventas} & Incremento\\ \midrule
+			
+		\end{tabular*}
 		
-	\end{tabular*}
-
-
+		
 		
 		
 	}
@@ -1126,47 +1079,68 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 	
 	\caption[Estrategias]{Estrategias para la etapa de Madurez.}
 	\label{fig:tiposempresa}
-\end{figure*}
+\end{figure}
 
 
-\begin{figure*}[h]
+
+
+
+\begin{figure}[H]
 	
 	
 	\centering
 	{\footnotesize 
 		
-
 		
-	\begin{tabular*}{\linewidth}
-		{p{.25\linewidth} p{.66\linewidth}}
 		
-		\toprule[1.5pt]
-		\multicolumn{2}{ l }{ \textbf{{{\normalsize  \textsf{Declive}}}}}  \\ \midrule
-		\textbf{Producto} & Discontinuar artículos débiles  \\ \midrule
-		\textbf{Precio} &  Reducción de precio \\ \midrule
-		\textbf{Distribución} & Selectiva\\ \midrule
-		\textbf{Publicidad} & Reducir \\ \midrule
-		\textbf{Promoción \linebreak de ventas} & Reducción al mínimo \\ \midrule
-		
-	\end{tabular*}
+		\begin{tabular*}{\linewidth}
+			{p{.25\linewidth} p{.75\linewidth}}
+			
+			\toprule[1.5pt]
+			\multicolumn{2}{ l }{ \textbf{{{\normalsize  \textsf{Declive}}}}}  \\ \midrule
+			\textbf{Producto} & Discontinuar artículos débiles  \\ \midrule
+			\textbf{Precio} &  Reducción de precio \\ \midrule
+			\textbf{Distribución} & Selectiva\\ \midrule
+			\textbf{Publicidad} & Reducir \\ \midrule
+			\textbf{Promoción \linebreak de ventas} & Reducción al mínimo \\ \midrule
+			
+		\end{tabular*}
 		
 		
 		
 		
 	}
 	
-	
 	\caption[Estrategias]{Estrategias para la etapa de Declive.}
 	\label{fig:tiposempresa}
-\end{figure*}
+\end{figure}
 
+\newpage
 
+\section{Marca}
 
+Es el nombre, símbolo o diseño que trata de identificar bienes y/o servicios de un vendedor y diferenciarla de la competencia.
 
+\subsection{Características}
+\begin{itemize}
+	\item Registrable
+	\item Corta
+	\item Fácil de pronunciar
+	\item Fácil de escribir
+	\item Fácil de recordar
+	\item Evocadora
+\end{itemize}
 
+\section{Pilares de la comunicación}
 
-
-
+\begin{description}
+	\item[Venta personal. ] 
+	\item[Publicidad. ] 
+	\item[Isotipo. ] 
+	\item[Color. ]
+	\item[Diseño gráfico/audiovisual. ] 
+	
+\end{description}
 
 \bibliography{Mercado}
 \bibliographystyle{acm}
