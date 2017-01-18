@@ -1,19 +1,31 @@
-\documentclass[9pt, spanish, a5paper]{article}
+\documentclass[spanish, twocolumn, twoside,openany]{book}
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
+\usepackage[fontsize=8pt]{scrextend}
 
-\usepackage{tgschola}
+\usepackage[
+a5paper, 
+portrait,
+inner=20mm, 
+outer=10mm,
+tmargin=10mm, 
+bmargin=15mm
+]{geometry}
+
+
+\usepackage{parskip}
 \usepackage{tgheros}
 \renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
 %\usepackage{ascii}
 \usepackage{cite}
 \usepackage[bookmarks]{hyperref}
 
 \usepackage{microtype}
-\usepackage[margin=15mm]{geometry}
-\usepackage{booktabs}
 
+\usepackage{booktabs}
+\pagestyle{plain}
 \usepackage{subcaption}
 \usepackage{float}
 
@@ -31,23 +43,32 @@
 
 \renewcommand\tabcolsep{\fill}
 
-
-
+\hypersetup{
+	pdfinfo={
+		Title={Mercadotecnia},
+		Author={Sebastián Romero},
+		% ...
+	}
+}
+\raggedbottom
 
 \begin{document}
 
-\date{}
-
-\title{\textbf{{\huge Mercadotecnia}}}
-	\maketitle
-
-
-\newpage
+\begin{titlepage}
+	
+	\centering
+	\vspace*{\fill}
+	{\Huge\textbf{Mercadotecnia}\par}
+	\vspace*{\fill}
+	
+	
+	
+\end{titlepage}
 
  \tableofcontents
 
-\bigskip
-\listoffigures
+
+
 
 
 
@@ -55,7 +76,7 @@
 
 
 
-\part{Administración}
+\chapter{Administración}
 Es el proceso de \emph{fijar objetivos} y la \emph{orientación} de una organización.
 
 También es el conjunto de funciones que los administradores deben llevar a cabo. Las funciones son:
@@ -76,7 +97,7 @@ También es el conjunto de funciones que los administradores deben llevar a cabo
 \item[Técnica.] porque tiene un \emph{conjunto de herramientas, principios, normas y procedimientos} aplicables a la conducción de las organizaciones.
 \end{description}
 
-\section{Funciones de la administración}
+\subsubsection{Funciones de la administración}
 
 \begin{description}
 	\item[Planificación.] Selección de \emph{misiones} y \emph{objetivos} y las \emph{acciones necesarias para lograrlos}.
@@ -86,7 +107,7 @@ También es el conjunto de funciones que los administradores deben llevar a cabo
 	\item[Control.] \emph{Medición} y \emph{corrección} de las actividades de los empleados para asegurar que los acontecimientos estén de acuerdo con lo planificado.
 \end{description}
 
-\part{Gestión}
+\chapter{Gestión}
 Es la \emph{evaluación} de los \emph{resultados} de las \emph{acciones} y \emph{decisiones} de un administrador.
 
 
@@ -142,7 +163,7 @@ Es el que lleva a cabo las tareas y actividades para el cumplimiento de las meta
 \end{description}
 
 
-\part{Planeamiento estratégico}
+\chapter{Planeamiento estratégico}
 
 \section{Visión}
 	\begin{itemize}
@@ -221,7 +242,7 @@ Las principales estrategias son:
 	\textsc{\textbf{ejemplo:}}\textit{ Virgin.}
 \end{description}
 
-\part{Organizaciones}
+\chapter{Organizaciones}
 
 Una organización es una \emph{manera particular del hombre de asociarse} para alcanzar una \emph{solución} a ciertos \emph{problemas} que se plantean.
 
@@ -311,7 +332,7 @@ Los recursos con los que cuenta y necesitan las organizaciones para desarrollar 
 \end{itemize}
 
 
-\part{Modelo PENTA de Alberto Levy}
+\chapter{Modelo PENTA de Alberto Levy}
 
 El modelo PENTA es una \emph{herramienta técnica} para diagnosticar e intervernir en las empresas para ayudarlas a crear valor económico.
 
@@ -349,7 +370,7 @@ Valores, creencias y aspiraciones de la empresa.
 \end{itemize}
 
 
-\part{Empresas}
+\chapter{Empresas}
 
 Es una unidad social que tiene por objetivos \emph{producir bienes y servicios que satisfagan necesidades de una comunidad}.
 
@@ -374,10 +395,7 @@ Es una unidad social que tiene por objetivos \emph{producir bienes y servicios q
 		\end{tabular*}
 		
 		
-		\bigskip
-				\bigskip
-						\bigskip
-		
+		\bigskip		
 		
 		
 		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} p{.33\linewidth} p{.33\linewidth} p{.33\linewidth}}
@@ -504,7 +522,7 @@ Responsabilidad limitada al monto de su aporte (expresado en número de acciones
 
 
 
-\part{Mercadotecnia}
+\chapter{Mercadotecnia}
 
 \section{Definición de mercadotecnia}
 Es un \emph{conjunto de técnicas} que busca producir bienes y servicios que \emph{satisfagan las necesidades} del \emph{consumidor} y \emph{generen valor} para la empresa.
@@ -713,11 +731,11 @@ Las <<cuatro P>> son:
 
 
 
-\begin{figure*}[t]
+\begin{figure*}[h]
 	\centering
 	{\footnotesize 
 				
-		\begin{tabular*}{\linewidth}{p{.25\linewidth} p{.2\linewidth} p{.28\linewidth} p{.3\linewidth}}
+		\begin{tabular*}{\linewidth}{p{.25\linewidth} p{.25\linewidth} p{.25\linewidth} p{.25\linewidth}}
 			\toprule[1pt]
 			\textbf{Producto} & \textbf{Precio} & \textbf{Distribución} & \textbf{Promoción}  \\ \midrule
 			Calidad           & Descuentos      & Canales               & Publicidad          \\ \midrule
@@ -766,7 +784,7 @@ Son los que afectan de manera particular a la organización.
 \end{itemize}
 
 
-\part{Mercado}
+\chapter{Mercado}
 
 
 \section{Definición de mercado}
@@ -911,7 +929,7 @@ Es una porción de un segmento de mercado en la que los individuos poseen caract
 \end{description}
 
 
-\part{Producto, precios, colocación del producto, promoción de productos.}
+\chapter{Producto, precios, colocación del producto, promoción de productos.}
 
 \section{Producto}
 
@@ -1002,18 +1020,21 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 
 \subsubsection{Características de cada etapa del ciclo de vida del producto}
 
-\begin{figure}[H]
+
+
+
+\begin{figure*}[h]
 	\centering
 	{\footnotesize 
 		
 		
 		\begin{tabular*}{1\linewidth}
-			{ @{\extracolsep{6pt}} p{.15\linewidth} p{.20\linewidth} p{.20\linewidth} p{.20\linewidth} p{.20\linewidth} }
+			{ @{\extracolsep{6pt}} p{.20\linewidth} p{.20\linewidth} p{.20\linewidth} p{.20\linewidth} p{.20\linewidth} }
 			
 			\toprule[1pt]
 			& \textbf{Introducción} & \textbf{Crecimiento} & \textbf{Madurez} & \textbf{Declive} \\ \midrule
 			\textbf{Ventas} & Crear conciencia y probar el producto. & Rápido. & Pico & Declinantes                             \\ \midrule
-			\textbf{Costos por \linebreak cliente} & Eleveado & Medio & Bajo & Bajo \\ \midrule
+			\textbf{Costos por cliente} & Elevado & Medio & Bajo & Bajo \\ \midrule
 			
 			\textbf{Utilidades} & Negativas & En ascenso & Elevadas & Declinantes \\ \midrule
 			\textbf{Clientes} & Innovadores & Early adopters & Mayoría media & Rezagados \\ \midrule
@@ -1026,7 +1047,7 @@ Entender el ciclo de vida del producto sirve para tomar las decisiones estratég
 	
 	\caption[Características de cada etapa]{Características de cada etapa del ciclo de vida del producto.}
 	\label{fig:tiposempresa}
-\end{figure}
+\end{figure*}
 
 
 
@@ -1304,8 +1325,6 @@ Son el grado de dificultad que supone para una empresa para acceder a determinad
 	\item[Acceso a canales de distribución.]
 \end{description}
 
-\bibliography{Mercado}
-\bibliographystyle{acm}
 
 
 
